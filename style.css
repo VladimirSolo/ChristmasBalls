@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+#container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+#treeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#erorrMessage {
+  display: none;
+  color: red;
+}
+#result {
+  color: hotpink;
+}
+canvas {
+  border: 1px solid black;
+}
+button {
+  margin-top: 20px;
+}

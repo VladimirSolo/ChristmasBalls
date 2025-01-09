@@ -1,9 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Игра с шариками</title>
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <div id="treeContainer">
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+      </div>
+
+      <div id="gameContainer">
+        <h1>Choose the number of balls</h1>
+        <label for="yellowBalls">Yellow balls:</label>
+        <input type="number" id="yellowBalls" value="0" min="0" max="4" />
+        <label for="redBalls">Red balls:</label>
+        <input type="number" id="redBalls" value="0" min="0" max="8" />
+
+        <h3 id="erorrMessage">Take the balls</h3>
+
+        <h2>Choose the first player:</h2>
+        <select id="firstPlayer">
+          <option value="1">Kornei</option>
+          <option value="2">Pantelei</option>
+        </select>
+
+        <button id="startButton">Start game</button>
+
+        <h1 id="result"></h1>
+        <button id="resetButton" style="display: none">Reset game</button>
+      </div>
+    </div>
+
+    <script type="module" src="game.js"></script>
+  </body>
 </html>
